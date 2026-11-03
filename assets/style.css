@@ -1,16 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* .lexend-deca-<uniquifier> {
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
+:root{
+    /* Cores principais */
+    --color-gold: hsl(31, 77%, 52%);
+    --color-cyan: hsl(184, 100%, 22%);
+    --color-green: hsl(179, 100%, 13%);
+
+    /* Cores neutras */
+    --color-white: hsl(0, 0%, 95%);
+    --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+
+    /* Fontes */
+    --font-heading: "Big Shoulders", sans-serif;
+    --font-body: "Lexend Deca", sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card{
+    max-width: 300px;
+    height: auto;
+    padding: 40px;
+}
+
+.card img {
+    width: 64px;
+    height: auto;
+}
+
+.card p{
+    font-family: var(--font-body);
+    font-weight: 400;
+    margin-bottom: 90px;
+    color: var(--color-transparent-white);
+    font-size: 15px;
+}
+
+.card a{
+    display: block;
+    font-family: var(--font-body);
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 40px;
+    width: 130px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid transparent;
+    background-color: var(--color-white);
+}
+
+.card_sendans a{
+    color: var(--color-gold);
+}
+
+.card_sendans a:hover{
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.card h1{
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin: 25px 0 28px 0 ;
+    color: var(--color-white);
+}
+
+.card_sendans{
+    background-color:var(--color-gold);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.card_suvs{
+    background-color: var(--color-cyan);
+}
+
+.card_suvs a{
+    color:var(--color-cyan) ;
+}
+
+.card_suvs a:hover{
+    background-color: var(--color-cyan);
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.card_luxury{
+    background-color: var(--color-green);
+    border-radius: 0px 8px 8px 0px;
+}
+
+.card_luxury a{
+    color: var(--color-green);
+}
+
+.card_luxury a:hover{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
 
 
+/* footer */
 
-/* .big-shoulders-<uniquifier> {
-  font-family: "Big Shoulders", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
+.attribution{
+    background: linear-gradient(to right, var(--color-gold), var(--color-cyan), var(--color-green));
+    color: var(--color-white);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.attribution a{
+    color: var(--color-white);
+}
